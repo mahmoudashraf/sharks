@@ -4,6 +4,12 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 });
 
 module.exports = withBundleAnalyzer({
+  experimental: {
+    appDir: true,
+  },
+  images: {
+    domains: ['image.tmdb.org'],
+  },
   eslint: {
     dirs: ['.'],
   },
